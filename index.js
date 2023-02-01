@@ -21,7 +21,7 @@ var uri = `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@ac-cisbqkw-sh
 console.log(uri);
 MongoClient.connect(uri, function(err, client) {
  // const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
+  
   client.close();
 });
 
